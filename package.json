@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Alexis217/tp1_albarenga_alexis#readme",
   "description": "",
   "devDependencies": {
+    "@types/node": "^24.3.0",
     "tsx": "^4.20.5"
   }
 }

@@ -21,12 +21,22 @@ export class Partido {
     }
 
     jugar(): void {
-    if (!this.deporte.validar(this.local) || !this.deporte.validar(this.visitante)) {
-      throw new Error("Los equipos no pueden jugar el partido");
-    }
+  if (!this.deporte.validar(this.local) || !this.deporte.validar(this.visitante)) {
+    throw new Error("Los equipos no cumplen con las reglas del deporte");
+  }
+
+  // Simular un resultado aleatorio
+  const golesLocal = Math.floor(Math.random() * 6);      // 0 a 5
+  const golesVisitante = Math.floor(Math.random() * 6); // 0 a 5
+
+  this.resultado = new Resultado(golesLocal, golesVisitante);
 }
 
     toString(): string {
-        return `${this.local} vs ${this.visitante} en ${this.deporte}`;
-    }
+  const res = this.resultado
+    ? this.resultado.toString()
+    : "Partido aún no jugado";
+
+  return `${this.local.toString()} vs ${this.visitante.toString()} en ${this.deporte.nombre} → ${res}`;
+}
 }
