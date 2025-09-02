@@ -1,0 +1,25 @@
+{
+  "name": "tp1_albarenga_alexis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexis217/tp1_albarenga_alexis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexis217/tp1_albarenga_alexis/issues"
+  },
+  "homepage": "https://github.com/Alexis217/tp1_albarenga_alexis#readme",
+  "description": "",
+  "devDependencies": {
+    "tsx": "^4.20.5"
+  }
+}
